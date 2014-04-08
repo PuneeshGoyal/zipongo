@@ -1,0 +1,24 @@
+body{
+  background-image:url('../brownbars_repeat.png');
+  background-repeat:repeat-x;
+  margin: 0 auto;
+  padding: 0;
+  width: 1242px;
+  position: relative;
+}
+a { 
+  display: block;
+  position: absolute;
+}
+a#meals { 
+  left: 392px;
+  top: 16px;
+  width: 99px;
+  height: 31px;
+}
+a#menu {
+  left: 856px;
+  top: 15px;
+  width: 223px;
+  height: 30px;
+}

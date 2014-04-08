@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Delivery Details</title>
+    <link rel="stylesheet" href="css/demoStyle.css" type="text/css" />
+    <style>
+      a { 
+        left: 500px;
+        top: 800px;
+        width: 251px;
+        height: 45px;
+      }
+	       .mytst{ 
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        width: 310px;
+        height: 75px;
+      }
+
+    </style>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script>
+			function redirct1(){
+				var _location = document.location.toString();
+				var applicationNameIndex = _location.indexOf('/', _location.indexOf('://') + 3);
+				var applicationName = _location.substring(0, applicationNameIndex) + '/';
+				var webFolderIndex = _location.indexOf('/', _location.indexOf(applicationName) + applicationName.length);
+				var webFolderFullPath = _location.substring(0, webFolderIndex);
+	
+				var	baseURL = location.protocol + "//" + location.hostname + (location.port && ":" + location.port) + "/";
+					window.parent.location.href=webFolderFullPath;
+				}
+		</script>
+  </head>
+  <body>
+    <img src="6_Meals_Delivery.jpg" />
+    <a href="7_Meals_Replacement.html"></a>
+    <a href="#" class="mytst" onClick="redirct1()" ></a>
+  </body>
+</html>
